@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="a.css"> -->
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+section{
+    width: fit-content;
+    height: fit-content; /* 50vh */
+    padding: 2em;
+}
+section a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+   
+}
+section a:hover{
+    color: rgb(230, 125, 125);
+    text-decoration: underline;
+}
+img{
+    max-height: 1000px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+.col{
+    margin: 20px 0;
+    flex-basis: 50%;
+    min-width: 300px;
+    height: 100%;
+    position: relative;
+}
+.gallery-box{
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
+.gallery-box img{
+    width: 100%;
+    border: 10px solid rgb(228, 142, 142);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.gallery-box ul{
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gallery-box ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.gallery-box .active{
+    color: rgb(228, 142, 142);
+}
+.gallery-box ul li::after{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    top: 8px;
+    left: -5px;
+}
+.gallery-box .active::after{
+    background: rgb(228, 142, 142);
+}
+
+#certificate{
+    width: 300px;
+    height: 250px;
+}
+.text{
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+            <section id="details">
+                <a href="#about-me">About Me</a>
+                <a href="#my-certificates">Certificates</a>
+                <a href="#projects">Projects</a>
+                <img src="b.png" alt="">
+            </section>
+            <section id="about-me">
+                <div class="text"><header>About Me</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt distinctio modi assumenda dolores voluptate totam ipsum delectus. Porro, nisi facilis vel aut beatae sunt dolorem nulla ipsa eos illum eaque voluptate, facere delectus sequi dicta alias, maxime reiciendis error molestiae doloremque ab nobis quis sapiente minima. Corporis dignissimos esse eum nemo a maxime est optio ipsa molestias ab reprehenderit vero enim doloremque dolore, quo sunt dicta voluptate odit id veniam aut dolorum. Enim cupiditate necessitatibus aliquid quis dolores neque ea assumenda placeat voluptate odio quia doloremque, cum soluta a deserunt veritatis veniam impedit. Veritatis nobis obcaecati dolorem. Nemo, mollitia rerum?</p>
+                    <section id="details">
+                        <a href="#about-me">About Me</a>
+                        <a href="#my-certificates">Certificates</a>
+                        <a href="#projects">Projects</a>
+                    </section></div>
+            </section>
+            <section id="my-certificates">
+                <div class="text"><header>My Certificates</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt distinctio modi assumenda dolores voluptate totam ipsum delectus. Porro, nisi facilis vel aut beatae sunt dolorem nulla ipsa eos illum eaque voluptate, facere delectus sequi dicta alias, maxime reiciendis error molestiae doloremque ab nobis quis sapiente minima. Corporis dignissimos esse eum nemo a maxime est optio ipsa molestias ab reprehenderit vero enim doloremque dolore, quo sunt dicta voluptate odit id veniam aut dolorum. Enim cupiditate necessitatibus aliquid quis dolores neque ea assumenda placeat voluptate odio quia doloremque, cum soluta a deserunt veritatis veniam impedit. Veritatis nobis obcaecati dolorem. Nemo, mollitia rerum?</p>
+                    <div class="col">
+                        <div class="gallery-box">
+                            <img src="1.jpg" id="gallery">
+                            <ul>
+                                <li class="btn active">01</li>
+                                <li class="btn">02</li>
+                                <li class="btn">03</li>
+                                <li class="btn">04</li>
+                                <li class="btn">05</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <section id="details">
+                        <section id="details">
+                            <a href="#about-me">About Me</a>
+                            <a href="#my-certificates">Certificates</a>
+                            <a href="#projects">Projects</a>
+                        </section></div>
+            </section>
+            <section id="projects">
+                <div class="text"><header>Projects</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt distinctio modi assumenda dolores voluptate totam ipsum delectus. Porro, nisi facilis vel aut beatae sunt dolorem nulla ipsa eos illum eaque voluptate, facere delectus sequi dicta alias, maxime reiciendis error molestiae doloremque ab nobis quis sapiente minima. Corporis dignissimos esse eum nemo a maxime est optio ipsa molestias ab reprehenderit vero enim doloremque dolore, quo sunt dicta voluptate odit id veniam aut dolorum. Enim cupiditate necessitatibus aliquid quis dolores neque ea assumenda placeat voluptate odio quia doloremque, cum soluta a deserunt veritatis veniam impedit. Veritatis nobis obcaecati dolorem. Nemo, mollitia rerum?</p>
+                    <section id="details">
+                        <a href="#about-me">About Me</a>
+                        <a href="#my-certificates">Certificates</a>
+                        <a href="#projects">Projects</a>
+                    </section></div>
+            </section>
+
+
+
+            <script>
+                var btn = document.getElementsByClassName("btn");
+                var gallery = document.getElementById("gallery");
+        
+                var images = Array(
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                );
+        
+        
+                for(let i=0; i<btn.length; i++){
+                    btn[i].onclick = function(){
+                        {
+                        gallery.src = images[i];
+                        let current =document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace("active", "");
+                        this.className += " active";
+                    };
+                }
+                }
+            </script>
+</body>
+</html>
